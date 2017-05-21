@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ifrs.gp.view.MainActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnLimpar"
+        android:layout_width="@dimen/margem_superior"
+        android:layout_height="@dimen/margem_superior"
+        android:layout_marginBottom="@dimen/margem_esquerda"
+        android:layout_marginLeft="@dimen/margem_esquerda"
+        android:padding="0dp"
+        android:scaleType="center"
+        app:backgroundTint="@color/vermelho"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnConfirmar"
+        android:layout_width="@dimen/margem_superior"
+        android:layout_height="@dimen/margem_superior"
+        android:layout_marginBottom="@dimen/margem_esquerda"
+        android:layout_marginRight="@dimen/margem_esquerda"
+        android:padding="0dp"
+        android:scaleType="center"
+        app:backgroundTint="@color/verde"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/bebidas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ListView
+                    android:id="@+id/lanches"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+</android.support.constraint.ConstraintLayout>
