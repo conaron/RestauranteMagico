@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">zzz Magico</string>
+    <string name="txt_lanches">Lanches</string>
+    <string name="txt_bebidas">Bebidas</string>
+    <string name="txt_titulo">Magico</string>
+    <string name="lbl_retorno_observacao">Observação</string>
+    <string name="lbl_retorno_mesa">Mesa</string>
+</resources>
